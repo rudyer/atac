@@ -30,7 +30,7 @@ router.get("/route", async (req, res) => {
         const order = getRouteUsers(usersLocale)
         res.json(
 
-            //{
+
 
             order.map((x) => rows[x - 1] ?? {
                 "id": 0,
@@ -41,7 +41,7 @@ router.get("/route", async (req, res) => {
                 "x": 0,
                 "y": 0,
             },)
-            //}
+
         )
     } catch (error) {
 

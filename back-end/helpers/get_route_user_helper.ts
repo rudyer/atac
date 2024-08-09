@@ -79,5 +79,3 @@ export function getRouteUsers(users: Locale[]): number[] {
     const result = getRoute(dataGraph, 0);
     return result.track;
 }
-
-//console.log(`Caminho: ${result.track.map((x) => namePessoas[x - 1] ?? "Inicio").join(' -> ')} com distância ${result.totalDistance}`);
